@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import ProjectCard from './components/ProjectCard'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { useState } from "react";
 
 const projects = [
   {
@@ -36,8 +37,15 @@ const projects = [
   },
 ];
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
   return (
-    <>
+    <div className={darkMode ? "app dark" : "app"}>
+      <button
+      className="theme-toggle"
+      onClick={() => setDarkMode(!darkMode)} //value ko opposite kr do
+    >
+      {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
+    </button>
     <Navbar />
     <Hero />
     <About/>
@@ -76,7 +84,7 @@ function App() {
 </section>
     <Contact />
     <Footer />
-    </>
+    </div>
   )
 }
 

@@ -11,8 +11,37 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: white;
-  color: #111;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Light Mode Colors */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-color: #ffffff;
+  --border-color: #dddddd;
+  --muted-text: #555555;
+}
+
+/* Main App */
+.app {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Dark Mode Colors */
+.app.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-color: #1e1e1e;
+  --border-color: #333333;
+  --muted-text: #cccccc;
 }
 
 button,
