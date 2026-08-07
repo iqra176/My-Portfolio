@@ -11,34 +11,64 @@ import { useState } from "react";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "A responsive portfolio website built with React and TypeScript.",
-    image: "/projects/portfolio.jpg",
+    description:
+      "A responsive personal portfolio website built with React and TypeScript.",
+    image: "/portfolioSS.png",
     technologies: ["React", "TypeScript", "CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/portfolio",
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/My-Portfolio",
   },
-
   {
-    title: "Weather App",
-    description: "A weather application that displays weather information using an API.",
-    image: "/projects/weather.jpg",
-    technologies: ["React", "TypeScript", "API"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/weather-app",
+    title: "Recipe Generator App",
+    description:
+      "An AI powered app that generates recipes from user provided ingredients.",
+    image: "/recipeGeneratorSS.png",
+    technologies: ["React", "JavaScript", "AI API"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/Recipe-Generator",
   },
-
   {
-    title: "Todo App",
-    description: "A simple task management application for organizing daily tasks.",
-    image: "/projects/todo.jpg",
-    technologies: ["React", "TypeScript", "CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/todo-app",
+    title: "Word Guessing Game",
+    description:
+      "An interactive word guessing game built with React and JavaScript.",
+    image: "/wordGuessingGameSS.png",
+    technologies: ["React", "React Confetti", "JavaScript"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/Word-Guessing-Game",
   },
+  {
+    title: "Memes Generator App",
+    description:
+      "A meme generator that lets users create custom memes with images and text.",
+    image: "/memeGeneratorSS.png",
+    technologies: ["React", "JavaScript", "API"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/meme-generator",
+  },
+  {
+    title: "Tenzies Game",
+    description:
+      "A fun dice game where players roll and match all dice to win.",
+    image: "/tenziesSS.png",
+    technologies: ["CSS", "React", "JavaScript"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/Tenzies_Game",
+  },
+   {
+    title: "Mood App",
+    description:
+      "A mood based app that provides personalized song based on your mood.",
+    image: "/moodAppSS.PNG",
+    technologies: ["ReactJS", "CSS", "JavaScript"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/iqra176/Mood-Based-App-with-React",
+  },
+  
 ];
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  
+
   return (
     <div className={darkMode ? "app dark" : "app"}>
     <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -46,22 +76,14 @@ function App() {
     <About/>
     <Skills />
     <section id="projects" className="projects">
-
   <div className="projects-heading">
-    <p className="section-subtitle">
-      My Recent Work
-    </p>
-
-    <h2>My Projects</h2>
-
+    <p className="section-subtitle">My Work</p>
+    <h2>Projects</h2>
     <p>
-      Here are some projects I have built while learning
-      and practicing web development.
+      Here are some of the projects I have worked on.
     </p>
   </div>
-
   <div className="projects-grid">
-
     {projects.map((project) => (
       <ProjectCard
         key={project.title}
@@ -73,9 +95,7 @@ function App() {
         githubUrl={project.githubUrl}
       />
     ))}
-
   </div>
-
 </section>
     <Contact />
     <Footer />
