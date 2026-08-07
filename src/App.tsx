@@ -38,15 +38,10 @@ const projects = [
 ];
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <button
-      className="theme-toggle"
-      onClick={() => setDarkMode(!darkMode)} //value ko opposite kr do
-    >
-      {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-    </button>
-    <Navbar />
+    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
     <Hero />
     <About/>
     <Skills />

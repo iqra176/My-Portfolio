@@ -17,14 +17,19 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="project-card">
+
       <img
         src={image}
         alt={title}
         className="project-image"
       />
+
       <div className="project-content">
+
         <h3>{title}</h3>
+
         <p>{description}</p>
+
         <div className="project-technologies">
           {technologies.map((technology) => (
             <span key={technology}>
@@ -32,7 +37,9 @@ function ProjectCard({
             </span>
           ))}
         </div>
+
         <div className="project-buttons">
+
           <a
             href={liveUrl}
             target="_blank"
@@ -60,3 +67,4 @@ function ProjectCard({
 }
 
 export default ProjectCard;
+

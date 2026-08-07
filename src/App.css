@@ -2,10 +2,12 @@
    /* NAVBAR */
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 60px;
   background-color: #111;
+  position: relative;
+  z-index: 1000;
 }
 
 .logo {
@@ -14,21 +16,61 @@
   font-weight: bold;
 }
 
+/* Desktop navigation */
+
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 25px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
 
+/* Hamburger */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Theme button inside navbar */
+
+.theme-toggle {
+  padding: 7px 11px;
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+
+.app.dark .theme-toggle {
+  background: #222;
+  color: white;
+  border-color: #444;
+}  
 
    /* HERO */
 
@@ -478,16 +520,17 @@
    /* THEME TOGGLE */
 
 .theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
+  padding: 8px 12px;
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
   border-radius: 20px;
-  background: white;
-  color: #111;
   cursor: pointer;
-  z-index: 1000;
+  font-size: 18px;
+}
+
+.theme-toggle:hover {
+  opacity: 0.8;
 }
 
 .app.dark .theme-toggle {
@@ -501,20 +544,58 @@
 @media (max-width: 768px) {
 
   /* Navbar */
-
-  .navbar {
-    padding: 20px;
-    flex-direction: column;
-    gap: 20px;
+.navbar {
+    padding: 18px 20px;
+    flex-direction: row;
   }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hide menu by default */
 
   .nav-links {
-    gap: 15px;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 15px 0;
+    background-color: #111;
+    border-top: 1px solid #333;
   }
 
+  /* Show menu when React adds active */
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+
+    padding: 14px 20px;
+  }
+
+  .nav-links a:hover {
+    background-color: #222;
+    text-decoration: none;
+  }
+
+  .theme-toggle {
+    margin: 10px auto;
+  }
+  
   /* Hero */
 
   .hero {
