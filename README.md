@@ -67,7 +67,17 @@ Open the local URL shown in your terminal.
 
 ## 📸 Screenshots
 
-Screenshots will be added here.
+### 🏠 Home
+
+![Portfolio Home](public/portfolio-home.png)
+
+### 💼 Projects
+
+![Portfolio Projects](public/portfolio-projects.png)
+
+### 📩 Contact
+
+![Portfolio Contact](public/portfolio-contact.png)
 
 ## 🌐 Live Demo
 
