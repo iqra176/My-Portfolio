@@ -81,7 +81,7 @@ Open the local URL shown in your terminal.
 
 ## 🌐 Live Demo
 
-Coming soon.
+[View Live Portfolio](https://my-portfolio-f6qen7vxl-iqra-ajmal.vercel.app/)
 
 ## 👩‍💻 Author
 
