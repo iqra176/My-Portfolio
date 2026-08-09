@@ -26,11 +26,36 @@ A responsive personal portfolio website built with **React, TypeScript, and Vite
 
 ## 📂 Featured Projects
 
-- 🤖 [Recipe Generator](https://recipe-generator-aifxrzegw-iqra-ajmal.vercel.app/) — AI-powered recipe generation application
-- 🌈 [Mood-Based App](https://mood-based-app-with-react-qpxnwb1j9-iqra-ajmal.vercel.app/) — React application providing personalized content based on mood
-- 🔤 [Word Guessing Game](https://word-guessing-game-drab.vercel.app/) — Interactive word guessing game
-- 😂 [Meme Generator](https://meme-generator-lyart-beta.vercel.app/) — Create personalized memes
-- 🎲 [Tenzies Game](https://tenzies-game-gilt-nine.vercel.app/) — Interactive dice game
+### 🤖 Recipe Generator
+
+AI-powered recipe generation application.
+
+[🌐 Live Demo](https://recipe-generator-aifxrzegw-iqra-ajmal.vercel.app/) • [💻 GitHub](https://github.com/iqra176/Recipe-Generator)
+
+### 🌈 Mood-Based App
+
+React application providing personalized content based on mood.
+
+[🌐 Live Demo](https://mood-based-app-with-react-qpxnwb1j9-iqra-ajmal.vercel.app/) • [💻 GitHub](https://github.com/iqra176/Mood-Based-App-with-React)
+
+### 🔤 Word Guessing Game
+
+Interactive word guessing game built with React and JavaScript.
+
+[🌐 Live Demo](https://word-guessing-game-drab.vercel.app/) • [💻 GitHub](https://github.com/iqra176/Word-Guessing-Game)
+
+### 😂 Meme Generator
+
+Create personalized memes using images and custom text.
+
+[🌐 Live Demo](https://meme-generator-lyart-beta.vercel.app/) • [💻 GitHub](https://github.com/iqra176/meme-generator)
+
+### 🎲 Tenzies Game
+
+Interactive dice game built with React.
+
+[🌐 Live Demo](https://tenzies-game-gilt-nine.vercel.app/) • [💻 GitHub](https://github.com/iqra176/Tenzies_Game)
+
 
 ## 🚀 Getting Started
 
