@@ -8,8 +8,8 @@ function Footer() {
 
           <p>
             Frontend Developer passionate about building
-            modern and responsive websites using React
-            and TypeScript.
+            modern, responsive, and user-friendly web
+            experiences using React and TypeScript.
           </p>
         </div>
 
@@ -30,6 +30,7 @@ function Footer() {
             href="https://github.com/iqra176"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
           >
             GitHub
           </a>
@@ -38,11 +39,15 @@ function Footer() {
             href="https://www.linkedin.com/in/hafizaiqraajmal/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
           >
             LinkedIn
           </a>
 
-          <a href="mailto:iqraabbasi284@gmail.com">
+          <a
+            href="mailto:iqraabbasi284@gmail.com"
+            aria-label="Send me an email"
+          >
             Email
           </a>
         </div>

@@ -295,17 +295,27 @@
 
   transition:
     transform 0.3s ease,
+    box-shadow 0.3s ease,
     background-color 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
   width: 100%;
   height: 220px;
+
   object-fit: cover;
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
 }
 
 .project-content {
@@ -343,10 +353,24 @@
   color: #fff;
 }
 
+.app.dark .project-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
 .project-buttons {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.project-buttons .btn {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.project-buttons .btn:hover {
+  transform: translateY(-2px);
 }
 
    /* CONTACT */
@@ -678,7 +702,10 @@
   .projects {
     padding: 70px 20px;
   }
-
+  
+  .project-image {
+  height: 200px;
+}
   .projects-heading h2 {
     font-size: 34px;
   }
