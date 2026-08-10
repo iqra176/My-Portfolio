@@ -21,14 +21,22 @@ function About() {
 
         <p>
           I am a Frontend Developer passionate about creating modern,
-          responsive, and user-friendly web applications using React
-          and TypeScript.
+          responsive, and user friendly web applications using React,
+          TypeScript, JavaScript, and modern CSS frameworks.
         </p>
 
         <p>
-          I enjoy learning new technologies, solving problems, and
-          turning ideas into clean, functional, and engaging web
-          experiences.
+          I enjoy transforming ideas and designs into clean, functional,
+          and engaging digital experiences. I focus on writing maintainable
+          code, creating responsive layouts, and building interfaces that
+          provide a smooth experience across different devices.
+        </p>
+
+        <p>
+          I am continuously learning and improving my skills by working
+          on real world projects, exploring new technologies, and solving
+          challenging problems. My goal is to build high quality web
+          applications that are both visually appealing and easy to use.
         </p>
 
         <div className="about-skills">

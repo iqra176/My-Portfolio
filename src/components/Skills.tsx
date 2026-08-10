@@ -27,6 +27,18 @@ const skills = [
     name: "Git & GitHub",
     description: "Managing source code and version control",
   },
+  {
+    name: "CSS 3/Saas",
+    description: "Creating responsive and modern user interfaces",
+  },
+ {
+  name: "Bootstrap",
+  description: "Building responsive and mobile-first web interfaces",
+},
+{
+  name: "REST APIs",
+  description: "Integrating and working with web APIs",
+},
 ];
 // React Functional Component,`Skills` ek reusable React component hai.
 // Ye component skills section ka complete UI return karta hai.

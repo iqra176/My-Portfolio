@@ -4,20 +4,27 @@ function Hero() {
   return (
     <section id="home" className="hero">
       <div className="hero-content">
+      
+      <p className="hero-greeting">
+        Hello, I'm
+      </p>
 
-        <p className="hero-greeting">
-          Hello, I'm
-        </p>
+    <h1>Iqra Ajmal</h1>
 
-        <h1>Iqra Ajmal</h1>
+    <h2> Frontend Developer</h2>
 
-        <h2>Frontend Developer</h2>
+      <p className="hero-description">
+      I build modern, responsive, and user friendly web applications
+      using React, TypeScript, JavaScript, and modern web technologies.
+      I enjoy turning ideas into clean, interactive, and engaging
+      digital experiences.
+      </p>
 
-        <p className="hero-description">
-          I build modern, responsive, and user-friendly web applications
-          using React, TypeScript, and modern web technologies.
-        </p>
-
+      <p className="hero-description">
+      I am passionate about learning new technologies, solving
+      realworld problems, and continuously improving my development
+      skills to create high quality web experiences.
+      </p>
         <div className="hero-buttons">
 
           <a
